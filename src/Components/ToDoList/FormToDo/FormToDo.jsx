@@ -13,24 +13,25 @@ const FormTodo = (props) => {
         setDescription("");
     }
 
-    return <form onSubmit={handleSubmit}>
+    return (
         <div className="todo-list">
+            <form onSubmit={handleSubmit}>
             <div className="file-input">
                 <input
                     type="text"
                     className="text"
+                    placeholder='Task...'
                     value={description}
                     onChange={e => setDescription(e.target.value)}
                 />
                 <button
-                    className="button pink"
+                    className="button add"
                     disabled={description ? "" : "disabled"}
                 >
                     Add
                 </button>
             </div>
-        </div>
-    </form>
-        ;
+            </form>
+        </div>);
 };
 export default FormTodo;

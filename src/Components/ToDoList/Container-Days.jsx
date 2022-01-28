@@ -1,6 +1,6 @@
 import React from "react";
 import { Container } from "./Container";
-
+import '../../index.css'
 export function Days() {
   const daysList = [
     { name: "Monday" },
@@ -13,7 +13,7 @@ export function Days() {
   ];
 
   return (
-    <div>
+    <div className="App">
       {daysList.map((item) => (
         <Container name={item.name} key={item.name}/>
       ))}

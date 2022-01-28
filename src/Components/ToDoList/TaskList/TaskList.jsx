@@ -1,6 +1,8 @@
 import React from "react";
 import Checkbox from "./Checkbox/Checkbox";
 
+import '../../GeneralStyle.css'
+
 const TaskList = (props) => {
     const { list, setList } = props;
 
@@ -25,7 +27,7 @@ const TaskList = (props) => {
             {list.length ? chk : "No tasks"}
             {list.length ? (
                 <p>
-                    <button className="button blue" onClick={onClickRemoveItem}>
+                    <button className="button delete" onClick={onClickRemoveItem}>
                         Delete all done
                     </button>
                 </p>

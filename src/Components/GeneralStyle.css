@@ -1,0 +1,113 @@
+/* BUTTONS */
+:root {
+  --colorAdd: #e95678;
+  --colorAddActive: #c23455;
+  --colorBorderTask: #f8a8f8;
+  --colorButtonText: #fff;
+  --colorDay: blue;
+  --colorDelete: #25b0bc;
+  --colorDeleteHover: #166b72;
+  --colorGeneralDisplay: #f30000;
+  --colorHtml:#49b4b4;
+  --colorInput: #00ff44;
+  --colorShadow: #00000033;
+  --colorText: #076b74;
+  --colorTextChecked: #a5e7ec;
+  --colorToDoList: #dddfff;
+  --stroke: #42d7e4;
+}
+.button.add {
+  background: var(--colorAdd);
+}
+.button.delete {
+  background: var(--colorDelete);
+}
+.button:hover {
+  background: var(--colorDeleteHover);
+}
+.button:active {
+  background: var(--colorAddActive);
+}
+.button {
+  border-radius: 5px;
+  border: 0px solid;
+  color: var(--colorButtonText);
+  font-size: 15px;
+  outline: none;
+  padding: 8px;
+}
+.button[disabled] {
+  opacity: 0.3;
+}
+.App {
+  background: var(--colorGeneralDisplay);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+}
+.AppDay {
+  -moz-border-radius: 5%;
+  -ms-border-radius: 5%;
+  -o-border-radius: 5%;
+  -webkit-border-radius: 5%;
+  -webkit-transition: all 2s;
+  align-items: center;
+  background: var(--colorDay);
+  border-radius: 5%;
+  display: flex;
+  flex-direction: column;
+  margin: 3vh;
+  padding: 2vw;
+}
+.AppDay h1 {
+  justify-self: flex-start;
+  margin-top: 15px;
+}
+.todo-list {
+  background: var(--colorToDoList);
+  box-shadow: 0 5px 30px var(--colorShadow);
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  margin-top: 3vh;
+  max-width: 300px;
+  text-overflow: clip;
+  width: 90%;
+}
+.file-input {
+  background: var(--colorInput);
+}
+.file-input > .text {
+  background: transparent;
+  border: 0px solid;
+  font-size: 15px;
+  height: 46px;
+  outline: none;
+  width: 230px;
+}
+
+.todo {
+  border-bottom: solid 3px var(--colorBorderTask);
+  display: flex;
+  justify-content: left;
+  margin: 10px;
+  padding-bottom: 10px;
+  padding: 0;
+}
+.new-item {
+  justify-content: left;
+  width: 95%;
+}
+.todo__text {
+  margin-left: 5px;
+  max-width: 90%;
+  overflow-wrap: break-word;
+  text-align: justify;
+}
+.todo__state {
+  justify-self: left;
+}
+.todo:last-child {
+  border-bottom: none;
+}

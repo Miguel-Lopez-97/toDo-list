@@ -1,5 +1,5 @@
 html {
-  background: #ddd;
+  background: var(--colorHtml);
   display: flex;
   height: 100%;
 }
