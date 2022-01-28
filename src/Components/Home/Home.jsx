@@ -4,7 +4,7 @@ export function Home() {
 
     return(
         <div>
-            Hola
+            Hola esto es Home
         </div>
     );
 }
