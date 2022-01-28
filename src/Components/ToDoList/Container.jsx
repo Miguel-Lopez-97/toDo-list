@@ -9,7 +9,7 @@ export function Container(props) {
     };
     const {name}=props;
 return (
-    <div key={name}>
+    <div key={"div"+name}>
     <h1>{name}</h1>
     <FormTodo handleAddItem={handleAddItem} key={"form"+name}/>
     <TaskList list={list} setList={setList} key={"TaskList"+name} name={name}/>

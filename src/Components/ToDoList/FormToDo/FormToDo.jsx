@@ -6,7 +6,6 @@ const FormTodo = (props) => {
 
     const handleSubmit = e =>{
         e.preventDefault();
-
         handleAddItem({
             done:false,
             id:(+new Date()).toString(),

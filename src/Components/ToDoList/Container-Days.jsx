@@ -15,7 +15,7 @@ export function Days() {
   return (
     <div>
       {daysList.map((item) => (
-        <Container name={item.name} />
+        <Container name={item.name} key={item.name}/>
       ))}
     </div>
   );
