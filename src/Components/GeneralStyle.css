@@ -1,20 +1,20 @@
 /* BUTTONS */
 :root {
-  --colorAdd: #e95678;
-  --colorAddActive: #c23455;
-  --colorBorderTask: #f8a8f8;
-  --colorButtonText: #fff;
-  --colorDay: blue;
-  --colorDelete: #25b0bc;
-  --colorDeleteHover: #166b72;
-  --colorGeneralDisplay: #f30000;
-  --colorHtml:#49b4b4;
-  --colorInput: #00ff44;
-  --colorShadow: #00000033;
-  --colorText: #076b74;
-  --colorTextChecked: #a5e7ec;
-  --colorToDoList: #dddfff;
-  --stroke: #42d7e4;
+  --colorAdd: #56baba;
+  --colorAddActive: #56baba;
+  --colorBorderTask: #0df8f8;
+  --colorButtonText: #f2ffff;
+  --colorDay: #49b4b4;
+  --colorDelete: #368080;
+  --colorDeleteHover: #50b5b5;
+  --colorGeneralDisplay: #497fb4;
+  --colorHtml: #49b47f;
+  --colorInput: #eff9f9;
+  --colorShadow: #163636;
+  --colorText: #132d2d;
+  --colorTextChecked: black;
+  --colorToDoList: #bde4e4;
+  --stroke: #409d9d;
 }
 .button.add {
   background: var(--colorAdd);
@@ -86,7 +86,6 @@
   outline: none;
   width: 230px;
 }
-
 .todo {
   border-bottom: solid 3px var(--colorBorderTask);
   display: flex;
@@ -110,4 +109,72 @@
 }
 .todo:last-child {
   border-bottom: none;
+}
+ul {
+  align-items: center;
+  color: #eff9f9;
+  display: flex;
+  flex-wrap: wrap;
+  font-size: x-large;
+  font-weight: bold;
+  justify-content: center;
+  list-style-type: "< >  ";
+}
+li {
+  margin: 2vh 5vw;
+  width: 200px;
+}
+a {
+  color: #bde4e4;
+  text-decoration: none;
+}
+.Home {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 2vw 10vw;
+  width: 80vw;
+}
+.Home * {
+  margin: 0;
+  padding: 0;
+}
+.Home h1 {
+  margin-bottom: 2vh;
+  text-align: justify;
+}
+.Home h2 {
+  margin-bottom: 1vw;
+  text-align: left;
+}
+.Home ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  list-style: "*   ";
+  margin: 1vw 15vw;
+  width: 50vw;
+}
+.Home li {
+  font-size: 0.8em;
+  justify-self: left;
+  margin-top: 1vh;
+  text-align: justify;
+  width: 100%;
+}
+@media (max-width: 450px) {
+  body {
+    font-size: 0.5em;
+  }
+  .Home li {
+    font-size: 0.5em;
+  }
+}
+@media (min-width: 450px) and (max-width: 780px) {
+  body {
+    font-size: 0.65em;
+  }
+  .Home li {
+    font-size: 0.65em;
+  }
 }
